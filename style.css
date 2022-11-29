@@ -1,0 +1,48 @@
+h1,
+h5 {
+  /* Centrar text en la pagina */
+  text-align: center;
+  /* Text en negreta */
+  font-weight: bold;
+  /* Color del text */
+  color: goldenrod;
+}
+
+fieldset {
+  /* Treure la bora del fieldset */
+  border: none;
+  /* Sense farcit */
+  padding: 0;
+  /* Centrar els grups d'inputs */
+  text-align: center;
+}
+
+.amplada-200px {
+  /* Amplada dels inputs nom i cognom*/
+  width: 200px;
+}
+
+.amplada-300px {
+  /* Amplada de l'input edat */
+  width: 300px;
+}
+
+#submit {
+  /* Centrar botó submit */
+  text-align: center;
+}
+
+/* Centrar tota la pagina */
+html {
+  /* Fer que sigui com una taula */
+  display: table;
+  /* Marge automatic, fent que es centri l'element */
+  margin: auto;
+}
+
+body {
+  /* L'element es comporta com si fos un <td> */
+  display: table-cell;
+  /* Ajustar verticalment la cel·la de la taula <td> */
+  vertical-align: middle;
+}

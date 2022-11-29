@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulari</title>
+    <!-- Vincular estil css extern -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>El meu primer formulari</h1>
+
+    <h5>Les teves dades personals</h5>
+
+    <!-- Crear formulari -->
+    <form action="resultat.html" method="post">
+      <!-- Agrupació de inputs i labels -->
+      <fieldset>
+        <!-- Subtítol del input -->
+        <label for="nom">Nom:</label>
+        <!-- Crear input per introduir text -->
+        <input type="text" name="nom" id="nom" class="amplada-200px" />
+
+        <label for="cognom">Cognom:</label>
+        <input type="text" name="cognom" id="cognom" class="amplada-200px" />
+        <!-- Salt de línia -->
+        <br />
+        <br />
+        <label for="edat">Edat:</label>
+        <!-- Input per introduir número -->
+        <input type="number" name="edat" id="edat" class="amplada-300px" />
+      </fieldset>
+
+      <h5>Marca els llenguatges de programació que més t'agraden:</h5>
+
+      <fieldset>
+        <!-- Dividir el contingut -->
+        <div>
+          <!-- Seleccionar amb caselles  -->
+          <input type="checkbox" name="html" id="html" checked />
+          <label for="html">HTML</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="css" id="css" />
+          <label for="css">CSS</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="xml" id="xml" />
+          <label for="xml">XML</label>
+        </div>
+      </fieldset>
+
+      <h5>Selecciona el cicle formatiu que vols cursar:</h5>
+
+      <fieldset>
+        <!-- Subtítol del <fieldset> -->
+        <legend>Selecciona el cicle:</legend>
+        <div>
+          <!-- Botó d'opció -->
+          <!-- Important que el name sigui el mateix en els tres botons d'opció o si no ens deixarà seleccionar múltiples opcions -->
+          <input type="radio" name="cicle" id="asix" checked />
+          <label for="asix">ASIX</label>
+        </div>
+        <div>
+          <input type="radio" name="cicle" id="dam" />
+          <label for="dam">DAM</label>
+        </div>
+        <div>
+          <input type="radio" name="cicle" id="daw" />
+          <label for="daw">DAW</label>
+        </div>
+        <br />
+        <label for="curs">Selecciona el curs:</label>
+        <!-- Crear menu opcions -->
+        <select name="curs" id="curs">
+          <!-- Definir element del menu d'opcions -->
+          <option value="curs-primer" selected>Primer</option>
+          <option value="curs-segon">Segon</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <label for="observacions">Observacions:</label>
+        <br />
+        <br />
+        <!-- Crear àrea de text multilínia -->
+        <textarea
+          name="observacions"
+          id="observacions"
+          cols="50"
+          rows="10"
+          placeholder="Escriu el teu missatge"
+        ></textarea>
+      </fieldset>
+      <br />
+      <div id="submit">
+        <!-- Botó submit, per enviar la informació del formulari -->
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
